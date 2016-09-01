@@ -1,0 +1,3 @@
+cat IP_CN.txt | awk "NR>=0" | while read NO1 NO2; do wget -t 1 -T 20 -e http_proxy=http://$NO1:$NO2 www.costco.com; done
+
+wget -t 1 -T 10 -e http_proxy=http://43.224.234.86:80 --user-agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0" http://www.costco.com/fragrances.html
